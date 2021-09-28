@@ -1,4 +1,4 @@
-FROM docker.io/library/nginx:latest
+FROM quay.io/bitnami/nginx:latest
 ARG HTTP_PORT
 RUN chgrp -R 0 /var/cache/nginx /var/run && \
 	chmod -R g=u /var/cache/nginx /var/run && \
